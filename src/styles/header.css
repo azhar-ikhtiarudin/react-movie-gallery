@@ -1,0 +1,23 @@
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav h1{
+    text-decoration: none;
+    color: white;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    transition: 0.5s ease;
+}
+
+.header-nav h1:hover{
+    color: rgb(122, 150, 226);
+}
+
+a{
+    text-decoration: none;
+}

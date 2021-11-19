@@ -9,6 +9,7 @@
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 #form{
@@ -82,7 +83,7 @@ main{
 
 .movie-button{
   padding: 10px 20px;
-  margin: 15px 0;
+  margin: 15px 10px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -163,3 +164,160 @@ main{
   width: 15rem;
 }
 
+.popup{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: -10vw;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  transition: all 1s ease;
+}
+
+.popup-active{
+  left:'0';
+}
+
+.popup-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-button{
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  cursor: pointer;
+  padding: 1rem;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 3rem;
+}
+
+.popup-title{
+  padding: 1rem;
+}
+
+.popup-overview{
+  padding: 1rem;
+  width: 60vw;
+}
+
+.popup-image{
+  width: 15rem;
+  padding: 1rem;
+}
+
+
+.header-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav button{
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  transition: 0.5s ease;
+}
+
+.header-nav h1:hover{
+  color: rgb(122, 150, 226);
+}
+
+nav-title{
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+.favorite-bar{
+  display: flex;
+  flex-direction: column;
+  background: rgba(3, 10, 43, 0.856);
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  padding: 0 15px;
+  overflow-y:scroll ;
+  transition: all 1s ease-in-out;
+}
+
+
+
+.favorite-movie{
+  padding: 20px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(48, 78, 158);
+  border-radius: 10px;
+  max-width: 40vw;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.39);
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-movie-img{
+  width: 8rem;
+  border-radius: 5px;
+}
+
+.favorite-movie-info{
+  padding: .2rem;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+
+}
+
+.favorite-movie-title{
+  font-size: 1rem;
+  margin: 5px 0 15px;
+}
+
+.favorite-movie-rating{
+  margin: 10px 0 25px;
+}
+
+.favorite-movie-desc{
+  font-size: 0.6rem;
+}
+
+.favorites-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0 0 0 ;
+}
+
+.favorites-nav-button{
+  padding: 2px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
